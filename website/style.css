@@ -1,0 +1,547 @@
+/*--GLOBAL STYLES--*/
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: navy;
+}
+
+p {
+    font-family: 'ZCOOL XiaoWei', serif;
+    letter-spacing: 1px;
+    color: #010104;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif; 
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+label {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+#logo {
+    max-width: 100%;
+}
+
+.header { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid lightgrey 2px;
+}
+
+.info h2 {
+    padding: 3px;
+    color: navy;
+}
+
+/*--NAVIGATION--*/
+.main-nav {
+    list-style-type: none;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: navy;
+}
+
+.main-nav a:hover {
+    border: solid navy 3px;
+    padding: 3px 4px;
+    transition: border 0.2s ease-in-out;
+}
+
+/*--HERO--*/
+.hero {
+    background-color: navy; 
+    padding: 10px;
+}
+
+.hero h1 {
+    padding-bottom: 2px;
+    border-bottom: solid yellow 5px;
+    font-size: x-large;
+}
+
+.hero h3 {
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: medium;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.hero p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.hero p, h1 {
+    color: white;
+    text-align: center;
+}
+
+/*--ABOUT--*/
+.about a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.about h2 {
+    font-size: x-large;
+    text-align: left;
+    margin: 10px;
+    }
+
+.about p {
+    font-size: medium;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
+.about-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+
+/*--HERO MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    
+}
+/*--CASE STUDY HOMEPAGE--*/
+.case-studies a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.case-studies h2 {
+font-size: x-large;
+text-align: left;
+margin: 10px;
+}
+
+.case-studies p {
+    font-size: medium;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.case-studies img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-radius: 50%;
+    margin-bottom: 7px;
+}
+/*--CONTACT FORM--*/
+.contact-head {
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid navy;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact-container label {
+    font-size: large;
+}
+
+.contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#submit {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+    float: right;
+    background-color: navy;
+    color: white;
+    font-size: large;
+    border-color: navy;
+}
+
+#message {
+    text-align: start;
+    padding-bottom: 100px;
+}
+
+/*--CONTACT MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .contact-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+}
+/*--FOOTER--*/
+.footer-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*--PRODUCTS--*/
+.products a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.products h2 {
+    font-size: x-large;
+    text-align: left;
+    margin: 10px;
+}
+
+.products p {
+    font-size: large;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.products img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/*--INDIVIDUAL PRODUCTS--*/
+.individual-products a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.individual-products h2 {
+font-size: x-large;
+text-align: left;
+margin: 10px;
+}
+
+.individual-products p {
+    font-size: medium;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.individual-products img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    margin-bottom: 7px;
+}
+/*--CASE STUDY PAGE--*/
+
+.cases a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.cases h2 {
+    font-size: x-large;
+    text-align: left;
+    margin: 10px;
+}
+
+.cases p {
+    font-size: medium;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cases img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#upper {
+    font-size: x-large;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    }
+/*--SHOP--*/
+.shop a {
+    color: black;
+    text-decoration: navy underline;
+}
+
+.shop h2 {
+    font-size: x-large;
+    text-align: left;
+    margin: 10px;
+}
+
+.shop p {
+    font-size: medium;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.shop img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#center {
+    text-align: center;
+}
+/*--CONTACT PAGE--*/
+.contact-info h2 {
+    font-size: x-large;
+    text-align: left;
+    margin: 10px;
+    }
+
+.contact-info p {
+    font-size: x-large;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+/*--HEADER MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+   .info h2 {
+       font-size: 20px;
+   }
+}
+/*--NAVIGATION MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .main-nav a {
+        font-size: 25px;
+    }
+   
+}
+/*--HERO MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .hero  {
+        padding-bottom: 20px;
+     }
+
+     .hero-text {
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 15px;
+     }
+
+     .hero p {
+         font-size: 20px;
+         max-width: 600px;
+        margin: 0 auto;
+        padding-top: 15px;
+     }
+
+     .hero h1 {
+         font-size: 40px;
+     }
+ }
+/*--ABOUT/ CASE STUDY MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .row {
+        display: flex;
+    }
+    .column {
+        flex:50%;
+    }
+
+    .about p {
+        font-size: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .about h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .case-studies h2 {
+        text-align: center;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+    .case-studies p {
+        font-size: 20px;
+    }
+}
+/*--FOOTER MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .page-footer img {
+        max-width: 100%;
+    }
+
+    .page-footer {
+        padding: 10px;
+    }
+}
+/*--PRODUCTS PAGE MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .products h2 {
+        text-align: center;
+    }
+
+    .column2 {
+        float: left;
+        width: 25%;
+    }
+
+    .row2:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .row2 {
+          display: table;
+          width: 100%;
+      }
+}
+
+/*--INDIVIDUAL PAGES MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .individual-products h2 {
+        text-align: left;
+        font-size: 30px;
+        padding-top: 20px;
+        margin-left: 200px;
+    }
+    
+    .individual-products p {
+        font-size: 20px;
+        text-align: left;
+        margin-right: 200px;
+        margin-left: 200px;
+        padding-bottom: 20px;
+    }
+
+    .individual-products img {
+        max-width: 400px;
+        padding-top: 10px;
+    }
+}
+
+/*--CASE STUDY OVERVIEW PAGE--*/
+@media screen and (min-width: 45em) {
+    .cases img {
+        max-width: 300px;
+    }
+
+    .cases-container {
+        border-radius: 5px;
+        padding: 20px;
+        padding-bottom: 50px;
+        max-width: 400px;
+        background-color: #f2f2f2;
+        margin-top: 20px;
+    }
+
+    .colour-container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        padding-bottom: 50px;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .grid {
+        display: flex;                       
+        flex-wrap: wrap;                     
+        justify-content: space-around;
+      }
+
+    .cell {
+        flex: 0 0 32%;                       
+        margin-bottom: 5px;
+      }
+
+}
+
+/*--SHOP OVERVIEW PAGE MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .items {
+        flex: 25% 25% 25% 25%;
+        margin-bottom: 5px;
+    }
+}
+/*--CONTACT PAGE MEDIA QUERY--*/
+@media screen and (min-width: 45em) {
+    .contact-info h2 {
+        margin-left: 250px;
+    }
+}
